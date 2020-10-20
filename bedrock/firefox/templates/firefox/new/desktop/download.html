@@ -37,6 +37,30 @@
 </picture>
 {%- endmacro %}
 
+{% block sub_navigation %}
+<nav class="c-sub-navigation">
+  <div class="mzp-l-content">
+    <div class="c-sub-navigation-content">
+      <h2 class="c-sub-navigation-title">{{ ftl('navigation-firefox-for-desktop') }}</h2>
+      <ul class="c-sub-navigation-list">
+        <li class="c-sub-navigation-item">
+          <a href="{{ url('firefox.features.index') }}" data-link-type="nav" data-link-position="subnav" data-link-name="Features">{{ ftl('navigation-features') }}</a>
+        </li>
+        <li class="c-sub-navigation-item">
+          <a href="https://support.mozilla.org/products/firefox/{{ referrals }}" data-link-type="nav" data-link-position="subnav" data-link-name="Support">{{ ftl('navigation-support') }}</a>
+        </li>
+        <li class="c-sub-navigation-item">
+          <a href="https://addons.mozilla.org/firefox/{{ referrals }}" data-link-type="nav" data-link-position="subnav" data-link-name="Addons">{{ ftl('navigation-addons') }}</a>
+        </li>
+        <li class="c-sub-navigation-item">
+          <a href="{{ url('firefox.all') }}" data-link-type="nav" data-link-position="subnav" data-link-name="All Languages">{{ ftl('navigation-all-languages') }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
 {% block content %}
 <main role="main" class="main-download" {% if v %}data-variant="{{ v }}"{% endif %}>
   <section id="desktop-banner" class="c-block t-intro show-else mzp-has-media-hide-on-sm">

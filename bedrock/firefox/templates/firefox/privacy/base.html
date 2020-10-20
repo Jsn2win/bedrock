@@ -13,6 +13,27 @@
   {{ css_bundle('firefox-privacy-common') }}
 {% endblock %}
 
+{% block sub_navigation %}
+<nav class="c-sub-navigation">
+  <div class="mzp-l-content">
+    <div class="c-sub-navigation-content">
+      <h2 class="c-sub-navigation-title">{{ ftl('firefox-privacy-privacy') }}</h2>
+      <ul class="c-sub-navigation-list">
+        <li class="c-sub-navigation-item">
+          <a href="{{ url('firefox.privacy.index') }}" data-link-type="nav" data-link-position="subnav" data-link-name="Our Promise">{{ ftl('navigation-our-promise') }}</a>
+        </li>
+        <li class="c-sub-navigation-item">
+          <a href="{{ url('firefox.privacy.products') }}" data-link-type="nav" data-link-position="subnav" data-link-name="Our Products">{{ ftl('navigation-our-products') }}</a>
+        </li>
+        <li class="c-sub-navigation-item">
+          <a href="{{ url('firefox.privacy.book') }}" data-link-type="nav" data-link-position="subnav" data-link-name="Little Book of Privacy">{{ ftl('navigation-little-book-of-privacy') }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
 {% block content %}
 <main role="main">
   {% block sub_nav %}{% endblock %}
