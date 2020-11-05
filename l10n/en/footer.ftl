@@ -63,6 +63,8 @@ footer-company = Company
 footer-about = About
 footer-press-center = Press Center
 footer-careers = Careers
+
+# Outdated string
 footer-test-new-features = Test New Features
 footer-mdn-web-docs = { -brand-name-mdn-web-docs }
 footer-tools = Tools
