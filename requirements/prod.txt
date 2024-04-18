@@ -1,6 +1,6 @@
 -r base.txt
 
-gunicorn==19.7.1 \
+gunicorn==22.0.0 \
     --hash=sha256:75af03c99389535f218cc596c7de74df4763803f7b63eb09d77e92b3956b36c6 \
     --hash=sha256:eee1169f0ca667be05db3351a0960765620dad53f53434262ff8901b68a1b622
 apscheduler==3.0.5 \
