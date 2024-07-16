@@ -1,4 +1,4 @@
-Sphinx==1.8.3 \
+Sphinx==3.0.4 \
     --hash=sha256:429e3172466df289f0f742471d7e30ba3ee11f3b5aecd9a840480d03f14bcfe5 \
     --hash=sha256:c4cb17ba44acffae3d3209646b6baec1e215cad3065e852c68cc569d4df1b9f8
 recommonmark==0.5.0 \
@@ -103,3 +103,4 @@ fluent.pygments==0.1.0 \
 fluent.syntax==0.17.0 \
     --hash=sha256:ac3db2f77d62b032fdf1f17ef5c390b7801a9e9fb58d41eca3825c0d47b88d79 \
     --hash=sha256:e26be470aeebe4badd84f7bb0b648414e0f2ef95d26e5336d634af99e402ea61
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
